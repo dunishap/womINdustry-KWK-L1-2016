@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Tillana:800);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:700italic);
+
+
+h1 {
+margin: 50px 0 0 50px;
+  color: pink;
+  font-family: Tillana;
+}
+
+h2 {
+margin: 50px 0 0 50px
+  color: black;
+  font-family: Ubuntu Mono;
+
+}
+
+h3 {
+  margin: 50px 0 0 50px
+  color: black;
+  font-family: Ubuntu Mono;
+}
+
+.video {
+  position: absolute;
+  left: 30px;
+  bottom: 50px;
+}
+
+
+p {
+  font-family: Ubuntu Mono;
+
+}
+
+.card {
+  height: 25px;
+  width: 25%;
+  font-size: 30px;
+}
+
+img {
+position: absolute;
+right: 0px;
+bottom: 0px;
+/* width: 100%; */
+}
+
+.home_link {
+  font-family: Ubuntu Mono;
+  font-size: 30px;
+  position: absolute;
+  left: 25px;
+}
+
+ul {
+  list-style-type: none !important;
+
+}
+
+.container {
+    font-size: 50px;
+      line-height: 200%
+}
+
+label {
+    font-size: 35px !important;
+  display: inline-block;
+  line-height: 200%;
+}
+
+form ul li label {
+  line-height: 1.25em !important;
+}
+

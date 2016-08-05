@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+
+
+<!-- possible link for reference http://api.rubyonrails.org/classes/ActiveRecord/Calculations.html -->
+  </head>
+  <body>
+		<h1>Welcome to WomINdustry</h1>
+    <h2>Hey Girl! Take this quiz to find out where you're meant to be!!</h2>
+    <h3>THE QUIZ</h3>
+<!--       <form action="#"> -->
+<div class="container">
+    <form action="/results" method="POST">
+
+    <ul>
+      <li>
+        <h3>What was your favorite thing to do as a child?</h3>
+        <br>
+          <input name="activity" type="radio" id="Nature_Walks" value="Nature Walks"/>
+          <label for="Nature_Walks">Nature Walks</label>
+
+        <br>
+
+          <input name="activity" type="radio" id="Computer_and_Video_Games" value="Computer and Video Games" />
+          <label for="Computer_and_Video_Games">Computer and Video Games</label>
+
+        <br>
+
+          <input name="activity" type="radio" id="Legos_and_Blocks" value="Legos and Blocks"  />
+        <label for="Legos_and_Blocks">Legos and Blocks</label>
+
+        <br>
+
+          <input name="activity" type="radio" id="Puzzles" value="Puzzles" />
+          <label for="Puzzles">Puzzles</label>
+
+        <br>
+
+      </li>
+
+      <li> <h3>How would you describe your dreams for the World?</h3>
+        <br>
+
+        <input name="dream" type="radio"  id="quote1"  value="quote1" />
+        <label for="quote1">To be able to greater understand how evereything works, and to be able tough that.</label>
+        <br>
+
+          <input name="dream" type="radio" id="quote2" value="quote2" />
+          <label for="quote2">To enhance society through advances in computers and machines.</label>
+
+        <br>
+
+          <input name="dream" type="radio" id="quote3" value="quote3"  />
+          <label for="quote3">To learn how to further advance the human race by enhancing aspects of dailly life.</label>
+
+        <br>
+
+            <input name="dream" type="radio" id="quote4" value="quote4"  />
+            <label for="quote4">To understand how things work together, to solve problems and to promote balance.</label>
+
+        <br>
+
+      </li>
+
+      <li> <h3>What inspires you?</h3><br>
+<!--         <input type="radio" name="inspire" value="quote11"><p>I am so inspired by the natural world around us.</p><br>
+        <input type="radio" name="inspire" value="quote12"><p>I find human innovation to be so exciting and thought provoking.</p><br>
+        <input type="radio" name="inspire" value="quote13"><p>I love to see what people have done to enhance our world. That moves me.</p><br>
+        <input type="radio" name="inspire" value="quote14"><p>I love when I hear stories of initial struggle and then ultimate success.</p><br> -->
+
+<!--         <form action="#"> -->
+
+      <input name="inspire" type="radio" id="quote11" value="quote11" />
+      <label for="quote11">I am so inspired by the natural world around us.</label>
+
+        <br>
+
+      <input name="inspire" type="radio" id="quote12" value="quote12" />
+      <label for="quote12">I find human innovation to be so exciting and thought provoking.</label>
+
+        <br>
+
+       <input name="inspire" type="radio" id="quote13" value="quote13" />
+      <label for="quote13">I love to see what people have done to enhance our world. That moves me.</label>
+
+        <br>
+
+        <input name="inspire" type="radio" id="quote14" value="quote14" />
+        <label for="quote14">I love when I hear stories of initial struggle and then ultimate success.</label>
+
+        <br>
+
+      <li> <h3>If you could only pick one area of need in our world, what would it be?</h3><br>
+<!--         <input type="radio" name="world" value="quote21"><p>I would like to help research new ways to treat illnesses around the world.</p><br>
+        <input type="radio" name="world" value="quote22"><p>I feel as though I would like to teach under priviledge children new skill sets for our ever growing society.</p><br>
+        <input type="radio" name="world" value="quote23"><p>I want to help build new features in our buildings to further assist people with disabilities.</p><br>
+        <input type="radio" name="world" value="quote24"><p>I want to help organizations build after school enrichment programs for children whose parents work, to further develop their education and thinking skills.</p><br> -->
+
+<!--       <form action="#"> -->
+
+      <input name="world" type="radio" id="quote21" value="quote21" />
+      <label for="quote21">I would like to help research new ways to treat illnesses around the world.</label>
+
+        <br>
+
+      <input name="world" type="radio" id="quote22" value="quote22" />
+      <label for="quote22">I find human innovation to be so exciting and thought provoking.</label>
+
+        <br>
+
+      <input name="world" type="radio" id="quote23" value="quote23"  />
+      <label for="quote23">I love to see what people have done to enhance our world. That moves me.</label>
+
+        <br>
+
+        <input name="world" type="radio" id="quote24" value="quote24" />
+        <label for="quote24">I love when I hear stories of initial struggle and then ultimate success.</label>
+
+        <br>
+
+<!--   </form> -->
+      </li>
+
+      <li> <h3>What organization do you follow the most? </h3><br>
+
+<!--         <input type="radio" name="organization" value="Center for Disease Control"><p>Center for Disease Control</p><br>
+        <input type="radio" name="organization" value="Google"><p>Google</p><br>
+        <input type="radio" name="organization" value="NASA"><p>NASA</p><br>
+        <input type="radio" name="organization" value="Ernst and Young"><p>Ernst and Young</p><br> -->
+<!--          <form action="#"> -->
+
+      <input name="organization" type="radio" id="Center_for_Disease_Control" value="Center for Disease Control" />
+      <label for="Center_for_Disease_Control">Center for Disease Control</label>
+
+        <br>
+
+      <input name="organization" type="radio" id="Google" value="Google" />
+      <label for="Google">Google</label>
+
+        <br>
+
+      <input name="organization" type="radio" id="NASA" value="NASA"  />
+      <label for="NASA">NASA</label>
+
+        <br>
+
+        <input name="organization" type="radio" id="Ernst_and_Young" value="Ernst and Young" />
+        <label for="Ernst_and_Young">Ernst and Young</label>
+
+      <br>
+      </li>
+      <br>
+      <br><br>
+      <li><button type="submit" value="Submit">Submit</button></li>
+      <br><br><br>
+      </ul>
+
+
+
+   </form>
+    </div>
+
+
+  </body>
+</html>
