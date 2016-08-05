@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Results</title>
   </head>
-  <body>
+  <body style="padding-top: 2%">
 
-    <h1>Your Results are:  <%=@new_answer.print%></h1>
+    <h1 style="display: inline">Your Results are:  </h1>
+    <% @new_answer.print.each do |key, value| %>
+      <h5 style="display: inline; margin-top: 2%;margin-left: 3%"><%= key.to_s %> - <%= value.to_s %></h5>
+    <% end %>
 
     <h2>Now with your results, please explore each field with these links below. Each page displays a few of the women who have made huge impacts in the STEM fields.</h2>
 
@@ -19,7 +22,7 @@
     <a href= "/math" class="waves-effect waves-light btn-large">Math</a>
 <br>
 
-    <p class="home_link"><u><a href="/">Home</u></a></p>
+    <p class="home_link"><a href="/">Home</a></p>
     <center>
     <img  src="http://az616578.vo.msecnd.net/files/2016/02/05/635903006894720145607852857_1442469271473.png">
     </center>

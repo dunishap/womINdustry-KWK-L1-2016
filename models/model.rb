@@ -74,7 +74,7 @@ class Answers
     if @params[:organization] =="Center for Disease Control"
       #do whatever in here
       #:science = :science + 1
-      @answer[:organization] += 1
+      @answer[:science] += 1
       #taking in the hash and calling the key, science, and adding one point to it
     elsif @params[:organization] == "Google"
       @answer[:tech] +=1

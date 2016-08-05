@@ -36,10 +36,9 @@ class MyApp < Sinatra::Base
   end
 
   post '/results' do
-    p params
-    @new_answer=Answers.new(params)
+    @new_answer = Answers.new(params)
     @new_answer.answer
-    p @new_answer.print
+    p @new_answer.answer
     erb :results
   end
 
